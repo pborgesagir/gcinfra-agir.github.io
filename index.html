@@ -1,181 +1,74 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <title>TUTORIAL - ENVIO DAS PLANILHAS DE MEDIÇÕES</title>
-  <style>
-    body {
-      background-color: white;
-      margin: 40px;
-      padding: 0;
-    }
-    .blue-bar {
-      height: 30px;
-      background-color: #00008B;
-    }
-    .content {
-      padding: 20px;
-    }
-    .content p,
-    .content iframe,
-    .content img {
-      font-size: 20px;
-      margin-bottom: 20px;
-      text-align: justify;
-    }
-    .gif {
-      width: 100%; /* Make the gif responsive */
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    .content iframe {
-      width: 100%;
-      height: 400px;
-      margin-bottom: 20px;
-    }
-    .content img {
-      max-width: 100%;
-      height: auto;
-      margin-bottom: 20px;
-    }
-    h1, h2 {
-      text-align: center;
-    }
-    .iframe-container {
-      display: flex;
-      flex-wrap: wrap;
-      justify-content: space-between;
-      margin-top: 20px;
-    }
-
-    .iframe-container iframe {
-      width: calc(33.33% - 10px);
-      margin-bottom: 20px;
-      box-sizing: border-box;
-    }
-    .espacos {
-      white-space: pre;
-    }
-
-    @media (max-width: 767px) {
-      body {
-        margin: 10px;
-      }
-      .blue-bar {
-        height: 20px;
-      }
-      .content {
-        padding: 10px;
-      }
-      .content p,
-      .content iframe,
-      .content img {
-        font-size: 16px;
-      }
-      .iframe-container iframe {
-        width: 100%;
-        margin-bottom: 10px;
-      }
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Access the E-Agir Portfolio App</title>
+    <style>
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+            line-height: 1.6;
+            background-color: #f4f7f6;
+            margin: 0;
+            padding: 20px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh; /* Ensure content is centered vertically */
+        }
+        .container {
+            background-color: #ffffff;
+            padding: 30px 40px;
+            border-radius: 8px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            max-width: 600px;
+            width: 90%;
+        }
+        h1 {
+            color: #333;
+            margin-bottom: 15px;
+        }
+        p {
+            color: #555;
+            margin-bottom: 30px;
+        }
+        .appsheet-button {
+            display: inline-block;
+            padding: 12px 25px;
+            background-color: #007bff; /* Blue background */
+            color: #ffffff; /* White text */
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: bold;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .appsheet-button:hover,
+        .appsheet-button:focus {
+            background-color: #0056b3; /* Darker blue on hover/focus */
+            outline: none;
+            transform: translateY(-2px); /* Slight lift effect */
+        }
+        .appsheet-button:active {
+            transform: translateY(0); /* Button press effect */
+        }
+    </style>
 </head>
 <body>
-
-<div class="blue-bar"></div><br><br><br>
-<img src="logo.png" alt="Logo" style="position: absolute; top: 50px; left: 30px; max-width: 150px; z-index: 1;">
-
-<div class="content">
-  <h1>TUTORIAL DE ENVIO DAS PLANILHAS DE MEDIÇÃO</h1><br>
-
-  <p>Bem-vindo ao tutorial de envio de planilhas para medições de ordens de serviço de manutenção predial. <br>
-    Este guia será um passo a passo que ajudará você a organizar e enviar medições, garantindo que os dados sejam enviados 
-    de forma padronizada e permitam a atualização mensal do <a href=https://gcinfra-agir.streamlit.app/>dashboard de Análise de Medições.</a></p>
-  <br>
-  <br>
-
-  <img src="DataAnalytics.gif" alt="Data Analysis" class="gif"><br>
-
-  <!-- ... (your existing content) ... -->
-
-
-  
-  <br><br>
-  <p><strong>1º PASSO:</strong></p>
-   <p><br> Preencha a planilha de medições das Ordens de Serviço utilizando <i>exatamente</i> os nomes das colunas da planilha modelo abaixo:</p>
-  
-  <iframe src="https://docs.google.com/spreadsheets/d/e/2PACX-1vRLTnzvi43uZc8wMXwe1qXdlO67HVB--QeRrvWwiIo8jK6ojx8w_kW7i4jP1HKPSbGWoLVhf6NSkHz_/pubhtml?widget=true&amp;headers=false"></iframe>
-
-  <br>
-  <p>É possível acessar o modelo para fazer a sua cópia <a href=https://docs.google.com/spreadsheets/d/1SdBd5VhuFmt0Mb7znWmDaSIw9JoOV1lmGcofuCAFSsc/edit#gid=0>clicando aqui.</a></p><br><br> 
-  <p><strong>2º PASSO:</strong></p>
-   <p><br> Preencha a coluna "CLASSE" da seguinte forma:<br>
-  Existem três opções possíves:<br>
-    <br><strong>M.O.F</strong> - Para descrever Mão de Obra Fixa, ou seja, engloba os custos relacionados aos serviços permanentes. 
-    Incluindo a remuneração fixa dos funcionários envolvidos diretamente na execução dos serviços ou na produção de bens. 
-    A Mão de Obra Fixa é constante, independentemente do volume de trabalho, sendo uma parte integrante da força de trabalho dos custos operacionais.<br>
-    <br><strong>Serviço Especial</strong> - Aqui estão contemplados os custos associados a serviços específicos e não recorrentes, que dependem de cronograma ou materiais específicos. 
-    Isso pode incluir pinturas, serviços técnicos especializados, manutenção de equipamentos complexos ou qualquer atividade que não seja parte regular das operações. 
-    A categoria de Serviço Especial é para refletir despesas pontuais e diferenciadas.<br>
-     <br><strong>Outros</strong> - Reservada somente para custos associados a serviços já abertos pelas Unidades Hospitalares, representando as despesas não enquadradas nas categorias anteriores. 
-    <br></p><br>
-
-  <p><strong>3º PASSO:</strong></p>
-   <p><br> Preencha a coluna "SUBCLASSE" da seguinte forma:<br>
-  Existem oito opções possíves:<br>
-    <br><strong>Obra Correção</strong> - Esta categoria refere-se a intervenções ou trabalhos realizados para corrigir defeitos, falhas ou problemas identificados em uma estrutura existente. 
-    Inclui atividades destinadas a reparar danos ou imperfeições, garantindo a correção e a durabilidade das instalações.<br>
-    <br><strong>Obra Melhoria</strong> - Engloba projetos e execuções destinados a aprimorar ou aperfeiçoar as condições e características de uma estrutura ou espaço. 
-    Inclui investimentos para elevar a qualidade, funcionalidade ou eficiência de determinada área ou instalação.<br>
-     <br><strong>Simples Fornecimento</strong> - Refere-se à simples entrega de materiais ou produtos, sem a execução direta de serviços. 
-    Esta categoria engloba transações comerciais em que o foco principal é o fornecimento de itens específicos, sem envolvimento significativo de mão de obra adicional.<br>
-  
-     <br><strong>Equipe</strong> - Diz respeito aos custos associados à contratação e manutenção de uma equipe de trabalho. 
-    Isso inclui salários, benefícios e encargos sociais relacionados aos trabalhadores envolvidos diretamente na execução de atividades.<br>
-    <br><strong>Laudo/Projeto</strong> - Esta categoria abrange os custos relacionados à elaboração de laudos técnicos, estudos ou projetos específicos.
-    Inclui despesas associadas à análise, planejamento e desenvolvimento de documentos técnicos necessários para a condução adequada de determinado trabalho.<br>
-     <br><strong>Manta Elastomérica</strong> - Engloba os custos relacionados ao fornecimento e aplicação de mantas elastoméricas. 
-    Este material é utilizado em isolamento térmico e acústico, servindo para garantir eficiência energética e conforto ambiental.
-
-    <br><strong>Pintura</strong> - Refere-se aos custos associados à aplicação de tintas e revestimentos em superfícies diversas. 
-    Inclui materiais e mão de obra necessários para realizar trabalhos de pintura, seja por questões estéticas, de proteção ou ambas.<br>
-    <br><strong>Outros</strong> - Esta categoria é reservada para despesas que não se encaixam nas classificações anteriores. 
-    Inclui gastos diversos e não especificados nas demais categorias, proporcionando flexibilidade para acomodar diferentes tipos de custos não previstos.<br></p><br>
-
-  <p><strong>4º PASSO:</strong>📤</p>
-     
-  <p><br> Salve a planilha em formato <i>csv</i> e faça o envio através <a href=https://docs.google.com/forms/d/e/1FAIpQLSdv3CkTWlm_DlmIthQkFwAyopnu9lelO-jKjPrTcJ0ZLOXmqQ/viewform>deste formulário.</a><br>
-    Após o envio, espere receber o e-mail de confirmação ou de que algo precisa ser corrigido. Abaixo há um demonstrativo das três opções de e-mail que poderá receber.</p><br>
-
-  <div style="display: flex; justify-content: space-between;">
-    <img src="desculpe-algo-deu-errado.png" alt="Desculpe, algo deu errado" style="width: 33%;">
-    <img src="ops.png" alt="Oba!" style="width: 33%;">
-    <img src="oba.png" alt="Ops!" style="width: 33%;">
-</div>
-
-<p>Caso você receba algum dos e-mails dizendo que algo deu errado, confira se o erro se deu devido ao formato do arquivo não ter sido csv ou se foi devido a uma divergência na nomenclatura das colunas.
-  Corrija o que for preciso e envie novamente.<br>
-Caso você tenha recebido o e-mail avisando que os arquivos foram enviados com sucesso, ótimo. Trabalho de envio concluído. 🎉🥳<br>
-  Espere alguns minutos que logo vocês verá seus dados já atualizados no dashboard automaticamente.</p>
-
-
-  
-   <br><br>
-
-
-  <h1>Vídeo resumo - Processo de Envio das Planilhas de Medição</h1>
-  
-  <video width="100%" height="360" controls>
-    <source src="testedevideo.mp4" type="video/mp4">
-    Seu navegador não suporta este vídeo, sugiro utilizar o GoogleChrome.
-  </video>
-
-  
-  <p><strong>Casos as dúvidas persistam ou para quaisquer esclarecimentos adicionais, entre em contato com Kaio Razotto, <a href=https://agirsaude.workplace.com/chat/t/61552563800459>clique aqui para falar com Kaio no Workplace.</a>.
-    Ou com Pedro Borges, <a href=https://agirsaude.workplace.com/chat/t/61550835194919>clique aqui para falar com Pedro no Workplace.</a></strong></p>
-</div>
-
-<div class="blue-bar"></div>
-
+    <div class="container">
+        <h1>E-Agir Portfolio App</h1>
+        <p>
+            Click the button below to open and interact with the E-Agir Portfolio application, built using AppSheet.
+        </p>
+        <a href="https://www.appsheet.com/Start/5db92e0b-3ec4-486b-918f-48fda507e213?platform=desktop#vss=H4sIAAAAAAAAA6XOQQrCMBQE0LvMOifIVlyIKILixnQRm18ItklpUrWEHMhzeDF_1eJaXWbCmz8JZ0uXbdTlCfKQPq8lDZBICruhJQWpMPMudr5WEApr3bzCjbbufrNBISMXYvKRAmT6jsv_rgtYQy7aylI3do2SO96Ov0fFwWSQBZo-6mNNz8Fscuas8mUfyOx5yg8TwsLNr612ZuUNV1a6DpQfcxaJ0mUBAAA=&view=Pain%C3%A9is&appName=Portf%C3%B3lioE-Agir-558810529-25-03-28-2"
+           target="_blank"
+           rel="noopener noreferrer"
+           class="appsheet-button">
+            Open AppSheet Portfolio
+        </a>
+    </div>
 </body>
 </html>
